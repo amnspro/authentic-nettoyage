@@ -1,0 +1,170 @@
+/* =========================
+   BASE GÉNÉRALE
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  line-height: 1.7;
+}
+
+/* =========================
+   HEADER / HERO
+========================= */
+
+header {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 20px 35px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 1.05rem;
+  opacity: 0.9;
+}
+
+/* LOGO */
+
+.logo {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 15px;
+  background-color: #ffffff;
+  color: #0f172a;
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+  margin-top: 25px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   CONTENU PRINCIPAL
+========================= */
+
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+main p {
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  margin-top: 35px;
+  margin-bottom: 15px;
+  color: #0f172a;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* BLOCS BLANCS (CARTES) */
+
+.section-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* LIENS */
+
+a {
+  color: #1d4ed8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-box {
+  background-color: #e8f0fe;
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.contact-box strong {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0f172a;
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 6px 8px;
+  }
+
+  main {
+    margin: 25px auto;
+  }
+}
