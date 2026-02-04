@@ -39,8 +39,8 @@ a:hover{ text-decoration:underline; }
 .logo-img{
   display:block;
   margin: 0 auto 14px;
-  width: 120px;         /* tu peux mettre 90 / 110 / 140 */
-  max-width: 120px;
+  width: min(420px, 70vw);   /* taille “idéale” */
+  max-width: 420px;         /* ne dépassera jamais 420px */
   height: auto;
 }
 
@@ -124,3 +124,4 @@ footer{
   color: #64748b;
   text-align:center;
 }
+
