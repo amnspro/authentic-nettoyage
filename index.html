@@ -5,18 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Entreprise de nettoyage à Marseille | AUTHENTIC MULTI NET SERVICES</title>
-  <meta name="description" content="AUTHENTIC MULTI NET SERVICES – Entreprise de nettoyage professionnel et services associés à Marseille : bureaux, copropriétés, commerces, hôtels, restaurants, fin de chantier. Devis gratuit.">
 
-  <!-- IMPORTANT : TON FICHIER S'APPELLE styles.css -->
+  <meta name="description"
+        content="AUTHENTIC MULTI NET SERVICES – Entreprise de nettoyage professionnel à Marseille : bureaux, copropriétés, commerces, hôtels, restaurants, fin de chantier. Devis gratuit.">
+
   <link rel="stylesheet" href="styles.css">
+
+  <!-- SEO local -->
+  <meta name="geo.region" content="FR-13">
+  <meta name="geo.placename" content="Marseille">
+  <meta name="geo.position" content="43.2965;5.3698">
+  <meta name="ICBM" content="43.2965, 5.3698">
 </head>
 
 <body>
 
 <header class="site-header">
-  <!-- IMPORTANT : on remet ton logo exact -->
   <img src="https://amnspro.github.io/authentic-nettoyage/logo-amns-trim.png"
-       alt="Logo AUTHENTIC MULTI NET SERVICES"
+       alt="AUTHENTIC MULTI NET SERVICES – Entreprise de nettoyage à Marseille"
        class="logo-img">
 
   <h1>AUTHENTIC MULTI NET SERVICES</h1>
@@ -30,114 +36,82 @@
     <a href="nettoyage-bureaux-marseille.html">Bureaux</a>
     <a href="nettoyage-coproprietes-marseille.html">Copropriétés</a>
     <a href="nettoyage-locaux-commerciaux-marseille.html">Commerces</a>
-    <a href="nettoyage-hotels-restaurants-marseille.html">Hôtels & Restaurants</a>
+    <a href="nettoyage-hotels-restaurants-marseille.html">Hôtels &amp; Restaurants</a>
     <a href="nettoyage-fin-de-chantier-marseille.html">Fin de chantier</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
-
-<!-- ✅ BLOC OFFRE (AJOUT PROPRE, NE CASSE RIEN) -->
-<section class="section-box offer">
-  <div class="offer-text">
-    <h2>2h de ménage / semaine<br><span class="offer-price">130€ par mois*</span></h2>
-    <p>
-      Prestations régulières et fiables à Marseille et environs.
-      <br>Devis gratuit, sans engagement.
-    </p>
-    <a class="offer-btn" href="#devis">Je demande un devis</a>
-    <p class="offer-note">*Offre indicative – sans engagement.</p>
-  </div>
-
-  <div class="offer-media">
-    <!-- ✅ Tu peux remplacer par ton image si tu l'as dans le repo -->
-    <img src="https://amnspro.github.io/authentic-nettoyage/offre-menage.png"
-         alt="Offre ménage Marseille">
-  </div>
-</section>
-
-<!-- ✅ FORMULAIRE DEVIS (TON STYLE, AVEC MAIL PRO) -->
-<section class="section-box" id="devis">
-  <h2>Demande de devis gratuit</h2>
-  <p>
-    Décrivez-nous votre besoin. Nous vous répondons rapidement avec un devis
-    personnalisé, sans engagement.
-  </p>
-
-  <form action="https://formsubmit.co/contact@authentic-nettoyage.fr" method="POST">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://authentic-nettoyage.fr/merci.html">
-    <input type="hidden" name="_subject" value="Demande de devis – AUTHENTIC MULTI NET SERVICES">
-
-    <label>
-      Nom / Société *
-      <input type="text" name="nom" required>
-    </label>
-
-    <label>
-      Email *
-      <input type="email" name="email" required>
-    </label>
-
-    <label>
-      Téléphone *
-      <input type="tel" name="telephone" required>
-    </label>
-
-    <label>
-      Type de prestation *
-      <select name="prestation" required>
-        <option value="">— Sélectionner —</option>
-        <option>Nettoyage de bureaux</option>
-        <option>Nettoyage de copropriétés</option>
-        <option>Locaux commerciaux</option>
-        <option>Hôtels & restaurants</option>
-        <option>Fin de chantier</option>
-      </select>
-    </label>
-
-    <label>
-      Ville / Secteur *
-      <input type="text" name="ville" required>
-    </label>
-
-    <label>
-      Message
-      <textarea name="message" rows="4" placeholder="Surface, fréquence, contraintes horaires…"></textarea>
-    </label>
-
-    <button type="submit">Demander un devis gratuit</button>
-  </form>
-</section>
 
 <main>
 
   <!-- INTRO -->
   <section class="section-box">
     <h2>Entreprise de nettoyage à Marseille</h2>
+
     <p>
-      <strong>AUTHENTIC MULTI NET SERVICES</strong> est une entreprise spécialisée dans le
-      nettoyage professionnel et les services associés à destination des entreprises,
-      copropriétés et établissements recevant du public à Marseille et environs.
+      <strong>AUTHENTIC MULTI NET SERVICES</strong> est une entreprise spécialisée dans
+      le <strong>nettoyage professionnel</strong> et les <strong>services associés</strong>
+      à destination des entreprises, copropriétés et établissements recevant du public
+      à Marseille et dans les environs.
     </p>
+
     <p>
-      Nous proposons des prestations fiables, discrètes et adaptées à vos contraintes
-      opérationnelles, avec un suivi rigoureux et un interlocuteur unique.
+      Nous intervenons dans le respect des normes d’hygiène, de sécurité et de
+      confidentialité, avec des prestations fiables, planifiées et adaptées à vos
+      contraintes opérationnelles.
     </p>
   </section>
 
-  <!-- POURQUOI CHOISIR -->
+  <!-- SERVICES -->
+  <section class="home-section">
+    <h2 class="home-title">Nos services de nettoyage professionnel</h2>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>Nettoyage de bureaux</h3>
+        <p>Entretien régulier ou ponctuel de locaux professionnels.</p>
+      </div>
+
+      <div class="card">
+        <h3>Nettoyage de copropriétés</h3>
+        <p>Parties communes, halls, cages d’escaliers et locaux techniques.</p>
+      </div>
+
+      <div class="card">
+        <h3>Locaux commerciaux</h3>
+        <p>Magasins, surfaces de vente, espaces d’accueil et réserves.</p>
+      </div>
+
+      <div class="card">
+        <h3>Hôtels &amp; restaurants</h3>
+        <p>Prestations adaptées aux exigences d’hygiène du secteur CHR.</p>
+      </div>
+
+      <div class="card">
+        <h3>Nettoyage de fin de chantier</h3>
+        <p>Remise en propreté après travaux ou rénovation.</p>
+      </div>
+
+      <div class="card">
+        <h3>Interventions ponctuelles</h3>
+        <p>Nettoyages spécifiques selon vos besoins professionnels.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- POURQUOI NOUS -->
   <section class="home-section">
     <h2 class="home-title">Pourquoi choisir AUTHENTIC MULTI NET SERVICES ?</h2>
 
     <div class="grid-3">
       <div class="card">
         <h3>Fiabilité</h3>
-        <p>Prestations régulières, ponctualité et respect strict des consignes.</p>
+        <p>Prestations régulières, ponctualité et respect des consignes.</p>
       </div>
 
       <div class="card">
         <h3>Hygiène &amp; sécurité</h3>
-        <p>Respect des règles d’hygiène, méthodes adaptées et résultat soigné.</p>
+        <p>Protocoles adaptés, produits professionnels et résultats soignés.</p>
       </div>
 
       <div class="card">
@@ -152,43 +126,69 @@
 
       <div class="card">
         <h3>Devis gratuit</h3>
-        <p>Sans engagement. Réponse rapide. Marseille &amp; environs.</p>
+        <p>Étude personnalisée, sans engagement, réponse rapide.</p>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section class="home-section faq">
-    <h2 class="home-title">Questions fréquentes</h2>
+  <!-- FORMULAIRE DEVIS -->
+  <section class="section-box">
+    <h2>Demande de devis gratuit</h2>
 
-    <div class="faq-item">
-      <h3>Intervenez-vous tôt le matin ou après fermeture ?</h3>
-      <p>
-        Oui. Nous adaptons nos horaires (avant ouverture, heures creuses, après fermeture)
-        selon vos contraintes.
-      </p>
-    </div>
+    <p>
+      Décrivez-nous votre besoin. Nous vous répondons rapidement avec une proposition
+      adaptée à votre activité.
+    </p>
 
-    <div class="faq-item">
-      <h3>Faites-vous des prestations régulières ?</h3>
-      <p>
-        Oui : quotidien, hebdomadaire ou selon planning. Nous proposons une organisation
-        claire et stable.
-      </p>
-    </div>
+    <form action="https://formsubmit.co/contact@authentic-nettoyage.fr" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://authentic-nettoyage.fr/merci.html">
 
-    <div class="faq-item">
-      <h3>Intervenez-vous uniquement à Marseille ?</h3>
-      <p>
-        Nous intervenons à Marseille et environs. Indiquez-nous votre secteur et nous vous
-        confirmons rapidement.
-      </p>
-    </div>
+      <label>
+        Nom / Société *
+        <input type="text" name="nom" required>
+      </label>
+
+      <label>
+        Email *
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        Téléphone *
+        <input type="tel" name="telephone" required>
+      </label>
+
+      <label>
+        Type de prestation *
+        <select name="prestation" required>
+          <option value="">— Sélectionner —</option>
+          <option>Nettoyage de bureaux</option>
+          <option>Nettoyage de copropriétés</option>
+          <option>Locaux commerciaux</option>
+          <option>Hôtels & restaurants</option>
+          <option>Fin de chantier</option>
+        </select>
+      </label>
+
+      <label>
+        Ville / Secteur *
+        <input type="text" name="ville" required>
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="4"
+          placeholder="Surface, fréquence, contraintes horaires…"></textarea>
+      </label>
+
+      <button type="submit">Demander un devis gratuit</button>
+    </form>
   </section>
 
-  <!-- APPEL À L’ACTION -->
+  <!-- CONTACT RAPIDE -->
   <section class="contact-box">
-    <strong>Besoin d’un devis rapide ?</strong>
+    <strong>Contact direct</strong>
     <p>
       📧 <a href="mailto:contact@authentic-nettoyage.fr">contact@authentic-nettoyage.fr</a><br>
       📞 <a href="tel:+33603488685">06 03 48 86 85</a> —
