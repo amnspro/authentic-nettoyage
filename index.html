@@ -34,6 +34,65 @@
 
 <main>
 
+  <!-- FORMULAIRE DE DEVIS -->
+  <section class="section-box">
+    <h2>Demande de devis gratuit</h2>
+    <p>
+      Décrivez-nous votre besoin. Nous vous répondons rapidement avec un devis
+      personnalisé, sans engagement.
+    </p>
+
+    <form action="https://formsubmit.co/contact.amns1@gmail.com" method="POST">
+
+      <!-- Sécurité anti-spam -->
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- Redirection après envoi -->
+      <input type="hidden" name="_next" value="https://amnspro.github.io/authentic-nettoyage/merci.html">
+
+      <label>
+        Nom / Société *
+        <input type="text" name="nom" required>
+      </label>
+
+      <label>
+        Email *
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        Téléphone *
+        <input type="tel" name="telephone" required>
+      </label>
+
+      <label>
+        Type de prestation *
+        <select name="prestation" required>
+          <option value="">— Sélectionner —</option>
+          <option>Nettoyage de bureaux</option>
+          <option>Nettoyage de copropriétés</option>
+          <option>Locaux commerciaux</option>
+          <option>Hôtels & restaurants</option>
+          <option>Fin de chantier</option>
+        </select>
+      </label>
+
+      <label>
+        Ville / Secteur *
+        <input type="text" name="ville" required>
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" rows="4"
+          placeholder="Surface, fréquence, contraintes horaires…"></textarea>
+      </label>
+
+      <button type="submit">Demander un devis gratuit</button>
+
+    </form>
+  </section>
+
   <!-- INTRO -->
   <section class="section-box">
     <h2>Entreprise de nettoyage à Marseille</h2>
