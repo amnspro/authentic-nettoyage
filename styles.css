@@ -16,31 +16,37 @@ body {
 /* HEADER */
 .site-header {
   text-align: center;
-  padding: 40px 20px 20px;
+  padding: 50px 20px 30px;
   background: #f5f6f8;
 }
 
-/* LOGO — TAILLE CORRIGÉE */
+/* LOGO — TAILLE AUGMENTÉE */
 .logo-img {
-  max-width: 320px;
+  max-width: 620px; /* voire 700px si tu veux */
   width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto 14px;
+  margin: 0 auto 20px;
 }
 
 /* MOBILE */
 @media (max-width: 600px) {
   .logo-img {
-    max-width: 240px;
+    max-width: 340px;
   }
+}
+
+/* TITRE */
+.site-header h1 {
+  font-size: 2rem;
+  margin-bottom: 6px;
 }
 
 /* TAGLINE */
 .tagline {
+  font-size: 1.1rem;
   color: #555;
-  font-size: 1.05rem;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 /* NAVIGATION */
@@ -66,8 +72,9 @@ main {
   padding: 0 16px;
 }
 
-/* SECTIONS GÉNÉRALES */
-.section-box {
+/* SECTIONS */
+.section-box,
+.contact-box {
   background: #ffffff;
   border: 1px solid #e2e2e2;
   border-radius: 14px;
@@ -75,7 +82,7 @@ main {
   margin-bottom: 24px;
 }
 
-/* HOME */
+/* HOME SECTIONS */
 .home-section {
   margin: 40px 0;
 }
@@ -119,15 +126,6 @@ main {
   margin-bottom: 6px;
 }
 
-/* CONTACT BOX */
-.contact-box {
-  background: #fafafa;
-  border: 1px solid #ddd;
-  border-radius: 14px;
-  padding: 22px;
-  margin-top: 30px;
-}
-
 /* FOOTER */
 .site-footer {
   text-align: center;
@@ -137,7 +135,7 @@ main {
   font-size: 0.9rem;
 }
 
-/* RESPONSIVE GRID */
+/* RESPONSIVE */
 @media (max-width: 900px) {
   .grid-3 {
     grid-template-columns: repeat(2, 1fr);
