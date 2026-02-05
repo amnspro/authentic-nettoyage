@@ -29,7 +29,7 @@ body {
   margin: 0 auto 20px;
 }
 
-/* MOBILE */
+/* MOBILE LOGO */
 @media (max-width: 600px) {
   .logo-img {
     max-width: 340px;
@@ -126,30 +126,7 @@ main {
   margin-bottom: 6px;
 }
 
-/* FOOTER */
-.site-footer {
-  text-align: center;
-  padding: 18px;
-  background: #f5f6f8;
-  margin-top: 50px;
-  font-size: 0.9rem;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .grid-3 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 560px) {
-  .grid-3 {
-    grid-template-columns: 1fr;
-  }
-  .site-nav a {
-    display: inline-block;
-    margin: 6px 8px;
-  }
+/* FORMULAIRE */
 form {
   display: grid;
   gap: 14px;
@@ -184,4 +161,29 @@ form button:hover {
   background: #005fa3;
 }
 
+/* FOOTER */
+.site-footer {
+  text-align: center;
+  padding: 18px;
+  background: #f5f6f8;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
 
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav a {
+    display: inline-block;
+    margin: 6px 8px;
+  }
+}
