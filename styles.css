@@ -215,4 +215,57 @@ form button:hover {
   .grid-3 {
     grid-template-columns: 1fr;
   }
+/* OFFRE (bloc 130€) */
+.offer {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+
+.offer-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.offer-media {
+  flex: 1;
+  min-width: 260px;
+  text-align: center;
+}
+
+.offer-media img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid #e2e2e2;
+}
+
+.offer-price {
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.offer-btn {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  background: #b39a6a;
+  color: #fff;
+}
+
+.offer-btn:hover {
+  background: #9b845a;
+}
+
+.offer-note {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+
