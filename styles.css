@@ -150,4 +150,38 @@ main {
     display: inline-block;
     margin: 6px 8px;
   }
+form {
+  display: grid;
+  gap: 14px;
 }
+
+form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+form button {
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #005fa3;
+}
+
+
