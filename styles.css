@@ -179,7 +179,7 @@ form textarea:focus {
   box-shadow: 0 0 0 3px rgba(0,119,204,0.18);
 }
 
-/* Bouton */
+/* Bouton (formulaire) */
 form button {
   background: #0077cc;
   color: #fff;
@@ -215,57 +215,62 @@ form button:hover {
   .grid-3 {
     grid-template-columns: 1fr;
   }
-/* OFFRE (bloc 130€) */
-.offer {
-  display: flex;
-  gap: 22px;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+
+  .site-nav a {
+    display: inline-block;
+    margin: 6px 8px;
+  }
 }
 
-.offer-text {
-  flex: 1;
-  min-width: 260px;
-}
+/* =========================
+   AJOUTS PRO (CTA + DEVIS)
+   ========================= */
 
-.offer-media {
-  flex: 1;
-  min-width: 260px;
-  text-align: center;
-}
-
-.offer-media img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 16px;
-  border: 1px solid #e2e2e2;
-}
-
-.offer-price {
+/* 1) CTA principal (bouton) */
+.btn-cta {
   display: inline-block;
-  margin-top: 6px;
-}
-
-.offer-btn {
-  display: inline-block;
-  margin-top: 14px;
-  padding: 12px 22px;
-  border-radius: 999px;
+  background: #0077cc;
+  color: #fff;
   text-decoration: none;
-  font-weight: 700;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.10);
+}
+
+.btn-cta:hover {
+  background: #005fa3;
+}
+
+/* 2) Lien “Demander un devis” très visible dans la nav */
+.site-nav a.nav-cta {
   background: #b39a6a;
   color: #fff;
+  font-weight: 800;
+  padding: 8px 14px;
+  border-radius: 999px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.10);
 }
 
-.offer-btn:hover {
+.site-nav a.nav-cta:hover {
   background: #9b845a;
 }
 
-.offer-note {
-  margin-top: 10px;
-  font-size: 0.9rem;
+/* 3) Note RGPD propre sous le formulaire */
+.rgpd-note {
+  margin-top: 12px;
+  font-size: 0.92rem;
   color: #555;
+  line-height: 1.4;
 }
 
+.rgpd-note a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 700;
+}
 
+.rgpd-note a:hover {
+  text-decoration: underline;
+}
