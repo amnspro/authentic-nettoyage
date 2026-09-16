@@ -473,10 +473,6 @@ main {
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
 }
 
-.service-card:nth-child(4) {
-  grid-column: 2 / span 2;
-}
-
 .service-card:hover {
   transform: translateY(-4px);
   border-color: var(--amns-gold);
@@ -509,6 +505,19 @@ main {
   margin-top: 18px;
   color: var(--amns-green-2);
   font-weight: 800;
+}
+
+.notice {
+  margin-top: 22px;
+  padding: 18px 20px;
+  color: #5f4b25;
+  border-left: 5px solid var(--amns-gold);
+  border-radius: 10px;
+  background: #fff8e8;
+}
+
+.notice p {
+  margin-top: 8px;
 }
 
 .card {
@@ -587,8 +596,7 @@ form button:hover {
   .service-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .service-card,
-  .service-card:nth-child(4) {
+  .service-card {
     grid-column: auto;
   }
 }
@@ -621,4 +629,3 @@ form button:hover {
     text-align: center;
   }
 }
-
