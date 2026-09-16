@@ -394,6 +394,32 @@ main {
   font-size: 1.08rem;
 }
 
+.hero-cta > .eyebrow {
+  margin-top: 0;
+  font-size: .78rem;
+}
+
+.brand-intro {
+  padding: clamp(24px, 4vw, 40px);
+  border-left: 6px solid var(--amns-gold);
+}
+
+.brand-intro h2 {
+  max-width: 800px;
+  font-size: clamp(1.55rem, 3vw, 2.25rem);
+  line-height: 1.2;
+}
+
+.brand-intro .brand-lead {
+  max-width: 940px;
+  margin-top: 18px;
+  font-size: 1.08rem;
+}
+
+.brand-intro > p:not(.eyebrow) {
+  max-width: 940px;
+}
+
 .cta-row {
   display: flex;
   flex-wrap: wrap;
@@ -452,6 +478,76 @@ main {
   letter-spacing: .11em;
   text-transform: uppercase;
   font-size: .78rem;
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.audience-panel {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(24px, 4vw, 38px);
+  border: 1px solid var(--amns-line);
+  border-radius: 20px;
+  box-shadow: var(--amns-shadow);
+}
+
+.audience-panel::after {
+  position: absolute;
+  right: -55px;
+  bottom: -70px;
+  width: 190px;
+  height: 190px;
+  content: "";
+  border-radius: 50%;
+  background: rgba(180,149,90,.10);
+}
+
+.audience-pro {
+  background: linear-gradient(145deg, #fff, #f2f7f5);
+}
+
+.audience-home {
+  background: linear-gradient(145deg, #fff, var(--amns-cream));
+}
+
+.audience-label {
+  display: inline-block;
+  padding: 5px 11px;
+  color: #fff;
+  border-radius: 999px;
+  background: var(--amns-green);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.audience-panel h3 {
+  margin-top: 16px;
+  color: var(--amns-green);
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+}
+
+.audience-panel p {
+  margin-top: 10px;
+  color: var(--amns-muted);
+}
+
+.audience-panel ul {
+  margin: 18px 0 24px 20px;
+}
+
+.audience-panel li + li {
+  margin-top: 7px;
+}
+
+.audience-panel .btn-primary {
+  position: relative;
+  z-index: 1;
 }
 
 .service-grid {
@@ -553,6 +649,34 @@ main {
   background: #fff;
 }
 
+.final-cta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 18px 30px;
+  padding: clamp(26px, 5vw, 44px);
+}
+
+.final-cta h2 {
+  max-width: 720px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.final-cta .eyebrow {
+  color: #d9c28f;
+}
+
+.final-cta > p {
+  margin: 0;
+}
+
+.final-cta > .btn-primary {
+  grid-column: 2;
+  margin-top: 0;
+  text-align: center;
+}
+
 .faq {
   border: 1px solid var(--amns-line);
   background: #fff;
@@ -593,6 +717,9 @@ form button:hover {
 }
 
 @media (max-width: 900px) {
+  .audience-grid {
+    grid-template-columns: 1fr;
+  }
   .service-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -623,6 +750,12 @@ form button:hover {
   .area-section {
     align-items: flex-start;
     flex-direction: column;
+  }
+  .final-cta {
+    grid-template-columns: 1fr;
+  }
+  .final-cta > .btn-primary {
+    grid-column: auto;
   }
   .cta-row a {
     width: 100%;
